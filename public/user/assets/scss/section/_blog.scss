@@ -1,0 +1,157 @@
+/*blog css here*/
+.blog_area{
+    & .container{
+        max-width: 1200px;
+        @media #{$large-mobile}{
+            max-width: 576px;
+        }
+    }
+}
+
+.blog_slick {
+    & .col-lg-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    & .slick-list{
+        padding-bottom: 10px;
+    }
+}
+
+.blog_thumb{
+    overflow: hidden;
+    &:hover{
+        & img{
+            transform: scale(1.1);
+        }
+    }
+    & img{
+        width: 100%;
+        transition: .3s;
+    }
+}
+
+
+.single_blog{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+}
+
+.blog_content{
+    padding: 18px 15px 20px 20px;
+   border-radius: 0 0 8px 8px;
+    @media #{$large-mobile}{
+        padding: 18px 15px 20px 17px;
+    }
+    & span{
+        font-size: 14px;
+        line-height: 20px;
+        color: #FF5A5F;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    & h3{
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        @media #{$desktop-device}{
+            font-size: 20px;
+            line-height: 26px;
+        }
+        & a{
+            color: #202040;
+            &:hover{
+                 color: #FF5A5F;
+            }
+        }
+        @media #{$large-mobile}{
+            font-size: 19px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+    }
+    & > a{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+        color: #535353;
+        display: inline-block;
+        &:hover{
+            color: #FF5A5F;
+        }
+    }
+}
+
+.view_all_post {
+	text-align: right;
+    @media #{$large-mobile}{
+        text-align: center;
+        margin-top: 18px;
+    }
+    & a{
+        font-size: 18px;
+        line-height: 18px;
+        color: #FF5A5F;
+        font-weight: 700;
+        text-decoration: underline;
+        &:hover{
+            color: #202040;
+        }
+    }
+}
+
+
+/*home seven css here*/
+.blog_seven{
+    @media #{$tablet-device}{
+       margin-bottom: 92px;
+    }
+    @media #{$large-mobile}{
+        margin-bottom: 72px;
+    }
+}
+
+
+/*blog page css here*/
+.blog_page_area{
+    & .container{
+        max-width: 1200px;
+        @media #{$large-mobile}{
+           max-width: 576px;
+        }
+    }
+    @media #{$tablet-device}{
+       padding-top: 7px;
+    }
+    @media #{$large-mobile}{
+       padding-top: 7px;
+    }
+}
+.blog_page_container{
+    & .single_blog{
+        margin-bottom: 30px;
+    }
+}
+
+
+.blog_pagination{
+    margin-top: 20px;
+    @media #{$large-mobile}{
+        margin-top: 12px;
+        margin-bottom: 29px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

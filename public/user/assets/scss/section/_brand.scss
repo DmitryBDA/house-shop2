@@ -1,0 +1,166 @@
+/*brand css here*/
+.brand_area {
+	padding: 128px 0 127px;
+    @media #{$tablet-device}{
+        padding: 89px 0 89px;
+    }
+    @media #{$large-mobile}{
+        padding: 67px 0 40px;
+    }
+    & .container{
+        max-width: 1200px;
+        @media #{$large-mobile}{
+            max-width: 576px;
+        }
+    }  
+}
+.brand_container{
+   @media #{$large-mobile}{
+       justify-content: center !important;
+    }
+}
+
+.single_brand{
+    position: relative;
+    @media #{$large-mobile}{
+        width: 33.33%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+     @media #{$small-mobile}{
+        width: 50%;
+    }
+    & img{
+        max-width: 100px;
+        @media #{$tablet-device}{
+            width: 85px;
+        }
+    }
+    & a{
+        &.primary_img{
+            & img{
+                opacity: 0.3;
+            }
+        }
+        &.secondary_img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s;
+        }
+        
+    }
+    &:hover{
+        & a{
+            &.secondary_img{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.brand_four{
+    & .container{
+        max-width: 1360px;
+    }
+}
+
+.brand_padding{
+    padding: 136px 0 128px;
+    @media #{$tablet-device}{
+        padding: 95px 0 90px;
+    }
+    @media #{$large-mobile}{
+       padding: 75px 0 40px;
+    }
+}
+
+.brand_agent{
+    padding: 132px 0 128px;
+    @media #{$tablet-device}{
+        padding: 95px 0 90px;
+    }
+    @media #{$large-mobile}{
+       padding: 45px 0 39px;
+    }
+}
+
+.brand_blog_d{
+    padding: 136px 0 128px;
+    @media #{$tablet-device}{
+        padding: 98px 0 90px;
+    }
+    @media #{$large-mobile}{
+       padding: 74px 0 38px;
+    }
+}
+
+.brand_login{
+    padding: 136px 0 128px;
+    @media #{$tablet-device}{
+        padding: 98px 0 90px;
+    }
+    @media #{$large-mobile}{
+       padding: 74px 0 38px;
+    }
+}
+
+.brand_our_agent{
+    padding: 108px 0 128px;
+    @media #{$tablet-device}{
+        padding: 67px 0 89px;
+    }
+    @media #{$large-mobile}{
+        padding: 47px 0 39px;
+    }
+}
+
+
+.brand_propertie_page{
+    padding: 136px 0 128px;
+    @media #{$tablet-device}{
+        padding: 97px 0 90px;
+    }
+    @media #{$large-mobile}{
+      padding: 75px 0 38px;
+    }
+}
+
+
+
+.brand_properties_d{
+    padding: 136px 0 128px;
+    @media #{$tablet-device}{
+        padding: 84px 0 90px;
+    }
+    @media #{$large-mobile}{
+       padding: 61px 0 38px;
+    }
+}
+
+.brand_p_leftsidebar{
+    padding: 122px 0 128px;
+    @media #{$tablet-device}{
+        padding: 83px 0 90px;
+    }
+    @media #{$large-mobile}{
+       padding: 61px 0 39px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
