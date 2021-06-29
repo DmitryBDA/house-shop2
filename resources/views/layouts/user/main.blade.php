@@ -61,71 +61,7 @@
                         <a href="javascript:void(0)">X</a>
                     </div>
                     <div id="menu" class="text-left ">
-                        <ul class="offcanvas_main_menu">
-                            <li class="menu-item-has-children active">
-                                <a href="#">Home</a>
-                                <ul class="sub-menu">
-                                    <li><a href="index.html">Home shop 1</a></li>
-                                    <li><a href="index-2.html">Home shop 2</a></li>
-                                    <li><a href="index-3.html">Home shop 3</a></li>
-                                    <li><a href="index-4.html">Home shop 4</a></li>
-                                    <li><a href="index-5.html">Home shop 5</a></li>
-                                    <li><a href="index-6.html">Home shop 6</a></li>
-                                    <li><a href="index-7.html">Home shop 7</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"> Members</a></li>
-                            <li class="menu-item-has-children">
-                                <a href="#">Properties</a>
-                                <ul class="sub-menu">
-                                    <li><a href="properties.html">properties</a></li>
-                                    <li><a href="properties-2.html">properties 2</a></li>
-                                    <li><a href="properties-3.html">properties 3</a></li>
-                                    <li><a href="properties-details.html">Properties Details</a></li>
-                                    <li><a href="properties-left-sidebar.html">properties left sidebar</a></li>
-                                    <li><a href="properties-right-sidebar.html">properties right sidebar</a></li>
-                                    <li><a href="properties-list.html">properties list</a></li>
-                                    <li><a href="properties-list-2.html">properties list 2</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children">
-                                <a href="#">pages </a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item-has-children"><a href="#">blog </a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog.html">blog</a></li>
-                                            <li><a href="blog-details.html">blog details</a></li>
-                                            <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
-                                            <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children"><a href="#">agent </a>
-                                        <ul class="sub-menu">
-                                            <li><a href="agent.html">agent</a></li>
-                                            <li><a href="agent-details.html">agent details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children"><a href="#">agency </a>
-                                        <ul class="sub-menu">
-                                            <li><a href="agency.html">agency</a></li>
-                                            <li><a href="agency-details.html">agency details</a></li>
-                                            <li><a href="create-agency.html">create agency</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li class="menu-item-has-children"><a href="#">services </a>
-                                        <ul class="sub-menu">
-                                            <li><a href="services.html">services</a></li>
-                                            <li><a href="single-services.html">single services</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">contact</a></li>
-                                    <li><a href="login.html">login</a></li>
-                                    <li><a href="register.html">register</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html"> Contact</a></li>
-                        </ul>
+                        @include('layouts.user.partial.nav-mobile')
                     </div>
                 </div>
             </div>
@@ -144,73 +80,13 @@
                         <a href="javascript:void(0)"><i class="ion-navicon"></i></a>
                     </div>
                     <div class="header_logo">
-                        <a href="index.html"><img src="user/assets/img/logo/logo.png" alt=""></a>
+                        <a href="{{route('main')}}"><img src="user/assets/img/logo/logo.png" alt=""></a>
                     </div>
                     <!--main menu start-->
                     <div class="main_menu">
                         <nav>
-                            <ul>
-                                <li><a href="index.html">home</a>
-                                    <ul class="sub_menu">
-                                        <li><a href="index.html">Home shop 1</a></li>
-                                        <li><a href="index-2.html">Home shop 2</a></li>
-                                        <li><a href="index-3.html">Home shop 3</a></li>
-                                        <li><a href="index-4.html">Home shop 4</a></li>
-                                        <li><a href="index-5.html">Home shop 5</a></li>
-                                        <li><a href="index-6.html">Home shop 6</a></li>
-                                        <li><a href="index-7.html">Home shop 7</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#"> Members</a></li>
-                                <li><a href="properties.html"> Properties </a>
-                                    <ul class="sub_menu">
-                                        <li><a href="properties.html">properties</a></li>
-                                        <li><a href="properties-2.html">properties 2</a></li>
-                                        <li><a href="properties-3.html">properties 3</a></li>
-                                        <li><a href="properties-details.html">Properties Details</a></li>
-                                        <li><a href="properties-left-sidebar.html">properties left sidebar</a></li>
-                                        <li><a href="properties-right-sidebar.html">properties right sidebar</a></li>
-                                        <li><a href="properties-list.html">properties list</a></li>
-                                        <li><a href="properties-list-2.html">properties list 2</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">pages</a>
-                                    <ul class="sub_menu pages">
-                                        <li><a href="blog.html">blog <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="multi_label_menu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="blog-details.html">blog details</a></li>
-                                                <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
-                                                <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="agent.html">agent <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="multi_label_menu">
-                                                <li><a href="agent.html">agent</a></li>
-                                                <li><a href="agent-details.html">agent details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="agency.html">agency <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="multi_label_menu">
-                                                <li><a href="agency.html">agency</a></li>
-                                                <li><a href="agency-details.html">agency details</a></li>
-                                                <li><a href="create-agency.html">create agency</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="services.html">services <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                            <ul class="multi_label_menu">
-                                                <li><a href="services.html">services</a></li>
-                                                <li><a href="single-services.html">single services</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">contact</a></li>
-                                        <li><a href="login.html">login</a></li>
-                                        <li><a href="register.html">register</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html"> Contact</a></li>
-                            </ul>
+                            <!-- Left Side Of Navbar -->
+                         @include('layouts.user.partial.nav')
                         </nav>
                     </div>
                     <!--main menu end-->
