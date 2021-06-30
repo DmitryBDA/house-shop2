@@ -64,7 +64,7 @@
 .find_house_text{
     width: 380px;
     position: relative;
-    
+
     &::before{
         position: absolute;
         content: "";
@@ -482,7 +482,7 @@
             right: -12px;
         }
     }
-    
+
 }
 
 
@@ -564,7 +564,7 @@
             justify-content: space-between;
         }
     }
-    
+
     & .advanced_filter_check {
         text-align: left;
         & label{
@@ -906,7 +906,7 @@
             }
         }
     }
-    
+
 }
 .advanced_filter5{
     position: absolute;
@@ -936,7 +936,7 @@
         }
         @media #{$tablet-device}{
            margin-right: 30px;
-           
+
         }
         @media #{$large-mobile}{
           margin-right: 0;
@@ -995,7 +995,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-    
+
 }
 
 
@@ -1020,11 +1020,11 @@
         @media #{$large-mobile}{
            max-width: 576px;
         }
-    } 
+    }
     @media #{$large-mobile}{
        margin-bottom: 80px;
     }
-    
+
 }
 .contact_agent_rank{
     margin-bottom: 48px;
@@ -1100,7 +1100,7 @@
         color: #535353;
         padding: 0 20px;
         margin-bottom: 25px;
-        
+
     }
 }
 
@@ -1577,7 +1577,7 @@
            max-width: 576px;
         }
     }
-    
+
 }
 
 .reliant_login_container{
@@ -1756,7 +1756,7 @@
 
         }
     }
-    
+
 }
 .forgot_password{
     & a{
@@ -1902,7 +1902,7 @@
                 margin-bottom: 28px;
             }
         }
-        
+
         & input{
             @media #{$desktop-device}{
                height: 60px;

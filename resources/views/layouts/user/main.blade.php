@@ -29,6 +29,9 @@
     <!--nice select css-->
     <link rel="stylesheet" href="user/assets/css/nice-select.css">
 
+    <link rel="stylesheet" href="user/assets/custom.css">
+
+
     @yield('custom_css')
     <!-- Minified CSS Plugins
         *************(Please remove the comment from below vendor.min.css and plugins.min.css  for better website load performance and remove all js plugin files from above)
@@ -93,8 +96,21 @@
                     <div class="header_right_info">
                         <div class="login_register">
                             <ul>
-                                <li class="login"><a href="login.html">login</a></li>
-                                <li class="register"><a href="register.html">register</a></li>
+                                @auth
+                                    <li class="ion-log-out"><a class="" href="{{ route('logout') }}"
+                                                          onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Выйти</a>
+
+                                    </li> {{Auth::user()->name}}
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                @endauth
+                                @guest
+                                    <li class="login"><a href="{{route('login')}}">Войти</a></li>
+                                    <li class="register"><a href="{{route('register')}}">Регистрация</a></li>
+                                @endguest
+
                             </ul>
                         </div>
                         <div class="add_property">

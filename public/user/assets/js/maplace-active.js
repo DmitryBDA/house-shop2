@@ -1,5 +1,5 @@
 $(function() {
-               
+
             var LocsA = [
                 {
                     lat: 40.740178,
@@ -8,8 +8,8 @@ $(function() {
                     html: ['<a href="#"><img style="width: 250px;" alt="" src="assets/img/properties/properties1.png"></a>',
                            '<h6 style="font-size: 15px; line-height: 18px; font-weight: 700;margin: 10px 0 5px;color: #000000;"><a href="#">Marvel de Villa</a></h6>',
                             '<p style="margin-bottom: 5px;color: #000000; font-weight: 300;">245 West City Central Town New York USA</p>',
-                            '<h5 style="margin: 0;font-weight:700; color: #FF5A5F;" class="price">$52,354</h5>'
-                           
+                            '<h5 style="margin: 0;font-weight:400; color: #FF5A5F;" class="price">$52,354</h5>'
+
                         ].join(''),
                     animation: google.maps.Animation.BOUNCE,
                     icon: 'assets/img/icon/place.png'
@@ -21,7 +21,7 @@ $(function() {
                     html: ['<a href="#"><img style="width: 250px;" alt="" src="assets/img/properties/properties1.png"></a>',
                            '<h6 style="font-size: 15px; line-height: 18px; font-weight: 700;margin: 10px 0 5px;color: #000000;"><a href="#">Marvel de Villa</a></h6>',
                              '<p style="margin-bottom: 5px;color: #000000; font-weight: 300;">245 West City Central Town New York USA</p>',
-                            '<h5 style="margin: 0;font-weight:700; color: #FF5A5F;" class="price">$52,354</h5>'
+                            '<h5 style="margin: 0;font-weight:400; color: #FF5A5F;" class="price">$52,354</h5>'
                         ].join(''),
                     icon: 'assets/img/icon/place.png',
                     animation: google.maps.Animation.BOUNCE
@@ -33,7 +33,7 @@ $(function() {
                      html: ['<a href="#"><img style="width: 250px;" alt="" src="assets/img/properties/properties1.png"></a>',
                            '<h6 style="font-size: 15px; line-height: 18px; font-weight: 700;margin: 10px 0 5px;color: #000000;"><a href="#">Duplex Queen</a></h6>',
                              '<p style="margin-bottom: 5px;color: #000000; font-weight: 300;">245 West City Central Town New York USA</p>',
-                            '<h5 style="margin: 0;font-weight:700; color: #FF5A5F;" class="price">$52,354</h5>'
+                            '<h5 style="margin: 0;font-weight:400; color: #FF5A5F;" class="price">$52,354</h5>'
                         ].join(''),
                     icon: 'assets/img/icon/place.png',
                     animation: google.maps.Animation.BOUNCE
@@ -45,7 +45,7 @@ $(function() {
                     html: ['<a href="#"><img style="width: 250px;" alt="" src="assets/img/properties/properties1.png"></a>',
                            '<h6 style="font-size: 15px; line-height: 18px; font-weight: 700;margin: 10px 0 5px;color: #000000;"><a href="#">Radison de Villa</a></h6>',
                             '<p style="margin-bottom: 5px;color: #000000; font-weight: 300;">245 West City Central Town New York USA</p>',
-                            '<h5 style="margin: 0;font-weight:700; color: #FF5A5F;" class="price">$52,354</h5>'
+                            '<h5 style="margin: 0;font-weight:400; color: #FF5A5F;" class="price">$52,354</h5>'
                         ].join(''),
                     icon: 'assets/img/icon/place.png',
                     animation: google.maps.Animation.BOUNCE
@@ -57,7 +57,7 @@ $(function() {
                     html: ['<a href="#"><img style="width: 250px;" alt="" src="assets/img/properties/properties1.png"></a>',
                            '<h6 style="font-size: 15px; line-height: 18px; font-weight: 700;margin: 10px 0 5px;color: #000000;"><a href="#">Duplex Queen</a></h6>',
                              '<p style="margin-bottom: 5px;color: #000000; font-weight: 300;">245 West City Central Town New York USA</p>',
-                            '<h5 style="margin: 0;font-weight:700; color: #FF5A5F;" class="price">$52,354</h5>'
+                            '<h5 style="margin: 0;font-weight:400; color: #FF5A5F;" class="price">$52,354</h5>'
                         ].join(''),
                     icon: 'assets/img/icon/place.png',
                     animation: google.maps.Animation.BOUNCE
@@ -69,7 +69,7 @@ $(function() {
                     html: ['<a href="#"><img style="width: 250px;" alt="" src="assets/img/properties/properties1.png"></a>',
                            '<h6 style="font-size: 15px; line-height: 18px; font-weight: 700;margin: 10px 0 5px;color: #000000;"><a href="#">Radison de Villa</a></h6>',
                             '<p style="margin-bottom: 5px;color: #000000; font-weight: 300;">245 West City Central Town New York USA</p>',
-                            '<h5 style="margin: 0;font-weight:700; color: #FF5A5F;" class="price">$52,354</h5>'
+                            '<h5 style="margin: 0;font-weight:400; color: #FF5A5F;" class="price">$52,354</h5>'
                         ].join(''),
                    icon: 'assets/img/icon/place.png',
                     animation: google.maps.Animation.BOUNCE
@@ -81,7 +81,7 @@ $(function() {
                     html: ['<a href="#"><img style="width: 250px;" alt="" src="assets/img/properties/properties1.png"></a>',
                            '<h6 style="font-size: 15px; line-height: 18px; font-weight: 700;margin: 10px 0 5px;color: #000000;"><a href="#">Radison de Villa</a></h6>',
                              '<p style="margin-bottom: 5px;color: #000000; font-weight: 300;">245 West City Central Town New York USA</p>',
-                            '<h5 style="margin: 0;font-weight:700; color: #FF5A5F;" class="price">$52,354</h5>'
+                            '<h5 style="margin: 0;font-weight:400; color: #FF5A5F;" class="price">$52,354</h5>'
                         ].join(''),
                     icon: 'assets/img/icon/place.png',
                     animation: google.maps.Animation.BOUNCE
@@ -93,7 +93,7 @@ $(function() {
                    html: ['<a href="#"><img style="width: 250px;" alt="" src="assets/img/properties/properties1.png"></a>',
                            '<h6 style="font-size: 15px; line-height: 18px; font-weight: 700;margin: 10px 0 5px;color: #000000;"><a href="#">Duplex Queen</a></h6>',
                             '<p style="margin-bottom: 5px;color: #000000; font-weight: 300;">245 West City Central Town New York USA</p>',
-                            '<h5 style="margin: 0;font-weight:700; color: #FF5A5F;" class="price">$52,354</h5>'
+                            '<h5 style="margin: 0;font-weight:400; color: #FF5A5F;" class="price">$52,354</h5>'
                         ].join(''),
                      icon: 'assets/img/icon/place.png',
                     animation: google.maps.Animation.BOUNCE
@@ -105,7 +105,7 @@ $(function() {
                      html: ['<a href="#"><img style="width: 250px;" alt="" src="assets/img/properties/properties1.png"></a>',
                            '<h6 style="font-size: 15px; line-height: 18px; font-weight: 700;margin: 10px 0 5px;color: #000000;"><a href="#">Radison de Villa</a></h6>',
                             '<p style="margin-bottom: 5px;color: #000000; font-weight: 300;">245 West City Central Town New York USA</p>',
-                            '<h5 style="margin: 0;font-weight:700; color: #FF5A5F;" class="price">$52,354</h5>'
+                            '<h5 style="margin: 0;font-weight:400; color: #FF5A5F;" class="price">$52,354</h5>'
                         ].join(''),
                     icon: 'assets/img/icon/place.png',
                     animation: google.maps.Animation.BOUNCE
@@ -117,13 +117,13 @@ $(function() {
                      html: ['<a href="#"><img style="width: 250px;" alt="" src="assets/img/properties/properties1.png"></a>',
                            '<h6 style="font-size: 15px; line-height: 18px; font-weight: 700;margin: 10px 0 5px;color: #000000;"><a href="single-properties.html">Radison de Villa</a></h6>',
                             '<p style="margin-bottom: 5px;color: #000000; font-weight: 300;">245 West City Central Town New York USA</p>',
-                            '<h5 style="margin: 0;font-weight:700; color: #FF5A5F;" class="price">$52,354</h5>'
+                            '<h5 style="margin: 0;font-weight:400; color: #FF5A5F;" class="price">$52,354</h5>'
                         ].join(''),
                     icon: 'assets/img/icon/place.png',
                     animation: google.maps.Animation.BOUNCE
                 }
 
-                
+
             ];
             new Maplace({
                 locations: LocsA,

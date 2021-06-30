@@ -1,0 +1,30 @@
+
+body{
+    font-weight: 700;
+}
+/*стили для кнопки авторизация/регистрация*/
+button.link {
+    width: 123px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #202040;
+    text-align: center;
+    border-radius: 3px;
+    border: 0;
+    display: inline-block;
+}
+button.link:hover {
+    background: #FF5A5F;
+}
+
+@media (max-width: 600px){
+    button.link {
+        width: 93px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 13px;
+    }
+}
