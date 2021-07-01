@@ -24,3 +24,8 @@ Auth::routes([
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [App\Http\Controllers\User\MainController::class, 'index'])->name('main');
+
+Route::middleware(['role:admin'])->prefix('admin')->group(function () {
+
+    Route::get('/', [App\Http\Controllers\Admin\MainController::class, 'index'])->name('admin-main');
+});
