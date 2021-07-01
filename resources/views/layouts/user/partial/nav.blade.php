@@ -6,7 +6,7 @@
                 if (isset($item->children)) {
     @endphp
     <li>
-        <a href="{{ $item->url }}">{{ $item->name }} @if($lavel == 2)<i class="fa fa-angle-right" aria-hidden="true"></i> @endif</a>
+        <a href="{{ route("$item->url") }}">{{ $item->name }} @if($lavel == 2)<i class="fa fa-angle-right" aria-hidden="true"></i> @endif</a>
         <ul class="@if($lavel == 1)sub_menu @else multi_label_menu @endif">
             @php buildMenu($item->children, $lavel + 1) @endphp
         </ul>
@@ -15,7 +15,7 @@
         } else {
     @endphp
     <li>
-        <a href="{{ $item->url }}" class="">{{ $item->name }}</a>
+        <a href="{{ route("$item->url") }}" class="">{{ $item->name }}</a>
     </li>
     @php
         }

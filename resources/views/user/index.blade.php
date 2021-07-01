@@ -81,7 +81,9 @@
                 </div>
             </div>
             <div class="single_slider d-flex align-items-center" data-bgimg="user/assets/img/slider/home_01_slider_03.png">
+
                 <div class="container">
+
                     <div class="row">
                         <div class="col-lg-10 offset-lg-1">
                             <div class="single_slider_inner">
