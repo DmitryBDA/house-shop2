@@ -1,7 +1,11 @@
 @extends('layouts.user.main')
 
 @section('custom_css')
-
+    <style>
+        .invalid-feedback{
+            display: block;
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -37,16 +41,31 @@
                                 <form method="post" action="{{route('register')}}">
                                     @csrf
                                     <div class="login_form_input mb-45">
-                                        <input name="name" placeholder="Введите имя" type="text" required>
+                                        <input name="name" placeholder="Введите имя" type="text" value="{{ old('name') }}" required>
+                                        @error('name')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="login_form_input mb-45">
-                                        <input name="email" placeholder="Введите email" type="text" required>
+                                        <input name="email" placeholder="Введите email" type="text" value="{{ old('email') }}" required>
+                                        @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                        @enderror
                                     </div>
                                     <div class="login_form_input mb-45">
                                         <input name="password" placeholder="Введите пароль" type="password" required>
+                                        @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="login_form_input">
-                                        <input name="password_confirmation" placeholder="Подтверждение пароля" type="password" required>
+                                        <input name="password_confirmation" placeholder="Подтверждение пароля" type="password" >
                                     </div>
                                     <div class="remember_forgotpassword">
                                         <div class="remember_me">
@@ -183,4 +202,5 @@
             </div>
         </div>
     </div>
-</div>--}}
+</div>
+--}}
