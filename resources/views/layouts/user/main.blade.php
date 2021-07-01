@@ -97,11 +97,19 @@
                         <div class="login_register">
                             <ul>
                                 @auth
+                                    <div>{{Auth::user()->name}}</div>
                                     <li class="ion-log-out"><a class="" href="{{ route('logout') }}"
                                                           onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">Выйти</a>
+                                    </li>
+                                    @if(Auth::user()->hasRole('admin'))
+                                        <li class="register">
+                                            <a href="{{route('admin-main')}}">Админка</a>
+                                        </li>
+                                    @endif
 
-                                    </li> {{Auth::user()->name}}
+
+
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
@@ -110,6 +118,7 @@
                                     <li class="login"><a href="{{route('login')}}">Войти</a></li>
                                     <li class="register"><a href="{{route('register')}}">Регистрация</a></li>
                                 @endguest
+
 
                             </ul>
                         </div>
