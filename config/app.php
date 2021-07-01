@@ -177,6 +177,7 @@ return [
 
         //Own providers
         App\Providers\ComposerServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
 
     ],
 
