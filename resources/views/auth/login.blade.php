@@ -2,7 +2,11 @@
 
 
 @section('custom_css')
-
+    <style>
+        .invalid-feedback{
+            display: block;
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -38,10 +42,20 @@
                                 <form method="post" action="{{route('login')}}">
                                     @csrf
                                     <div class="login_form_input top">
-                                        <input name="email" placeholder="Введите email" type="text">
+                                        <input name="email" placeholder="Введите email" type="text" value="{{ old('email') }}" required>
+                                        @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="login_form_input">
-                                        <input name="password" placeholder="Введите пароль" type="password">
+                                        <input name="password" placeholder="Введите пароль" type="password" required>
+                                        @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="remember_forgotpassword">
                                         <div class="remember_me">
